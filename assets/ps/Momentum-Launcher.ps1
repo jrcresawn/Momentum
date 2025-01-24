@@ -56,7 +56,8 @@ function Convert-TimeSpanToHuman([TimeSpan]$TimeSpan)
 }
 
 # Add Veeam commands
-Add-PSSnapin VeeamPSSnapin
+#Add-PSSnapin VeeamPSSnapin
+Import-Module Veeam.Backup.PowerShell
 
 if($Shimed) {
     Write-Host "Starting shimmed process...";
